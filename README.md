@@ -4,7 +4,10 @@ https://adibhan.github.io/PersonalSite/
 
 # Description
 
-I created a personal portfolio website with ReactJS and TailwindCSS.I plan on updating and improving this site as I continue to learn more about React.
+I created a personal portfolio website with ReactJS and TailwindCSS.4
+I plan on updating and improving this site as I continue to learn more about React.
+
+
 
 # Getting Started with Create React App
 
