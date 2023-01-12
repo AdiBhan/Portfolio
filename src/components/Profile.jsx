@@ -1,10 +1,10 @@
 //-------------------------------------------------------------------------------------------------
 // IMPORTS
-import Adi_Profile from "C:/Users/DEV/Downloads/BostonUniversity/current_projects/PersonalSite/src/images/icons/Adi_Profile.jpg";
-import github_logo from "C:/Users/DEV/Downloads/BostonUniversity/current_projects/PersonalSite/src/images/icons/github_logo.png";
-import linkledln_logo from "C:/Users/DEV/Downloads/BostonUniversity/current_projects/PersonalSite/src/images/icons/linkledln_logo.png";
-import resume_logo from "C:/Users/DEV/Downloads/BostonUniversity/current_projects/PersonalSite/src/images/icons/resume_logo.png";
 
+import Adi_Profile from "../images/icons/Adi_Profile.jpg";
+import github_logo from "../images/icons/github_logo.png";
+import linkledln_logo from "../images/icons/linkledln_logo.png";
+import resume_logo from "../images/icons/resume_logo.png";
 //-------------------------------------------------------------------------------------------------
 // CSS INLINE STYLING USING TAILWIND
 let icons_hover_style =

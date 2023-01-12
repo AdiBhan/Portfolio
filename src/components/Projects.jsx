@@ -1,9 +1,9 @@
 //-------------------------------------------------------------------------------------------------
 import React from "react";
 import Carousel from "react-bootstrap/Carousel";
-import adi_ai_project from "C:/Users/DEV/Downloads/BostonUniversity/current_projects/PersonalSite/src/images/projects_photos/adi-ai_project.png";
-import greengle_project from "C:/Users/DEV/Downloads/BostonUniversity/current_projects/PersonalSite/src/images/projects_photos/greengle_project.png";
-import portfolio_project from "C:/Users/DEV/Downloads/BostonUniversity/current_projects/PersonalSite/src/images/projects_photos/portfolio_project.png";
+import adi_ai_project from "../images/projects_photos/adi-ai_project.png";
+import greengle_project from "../images/projects_photos/greengle_project.png";
+import portfolio_project from "../images/projects_photos/portfolio_project.png";
 
 //-------------------------------------------------------------------------------------------------
 // CSS INLINE STYLING USING TAILWIND
