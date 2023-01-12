@@ -1,4 +1,12 @@
+.fade-exit {
+  opacity: 1;
+}
 
+.fade-exit-active {
+  opacity: 0;
+  transform: translateY(-0.5rem);
+  transition: all 500ms ease-in-out;
+}
 .App {
   text-align: center;
 }
