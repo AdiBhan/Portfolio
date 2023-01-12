@@ -30,10 +30,7 @@ function Footers() {
           <p></p>
           <span class={footer_text}>
             All Rights Reserved | Created by Adi Bhan with ❤️ from GitHub ➡️{" "}
-            <a
-              href="https://github.com/AdiBhan/PersonalSite"
-              class={footer_hover}
-            >
+            <a href="https://github.com/AdiBhan/Portfolio" class={footer_hover}>
               Click to view source
             </a>
             .

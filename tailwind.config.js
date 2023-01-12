@@ -4,10 +4,8 @@ module.exports = {
     fontFamily: {
       sans: ["Open Sans", "sans-serif", "Lato", "sans-serif"],
     },
-  },
-  content: ["./src/**/*.{js,jsx,ts,tsx}"],
-  theme: {
     extend: {},
   },
+  content: ["./src/**/*.{js,jsx,ts,tsx}"],
   plugins: [],
 };

@@ -1,10 +1,6 @@
 //-------------------------------------------------------------------------------------------------
 import React from "react";
 import Carousel from "react-bootstrap/Carousel";
-import adi_ai_project from "../images/projects_photos/adi-ai_project.png";
-import greengle_project from "../images/projects_photos/greengle_project.png";
-import portfolio_project from "../images/projects_photos/portfolio_project.png";
-
 //-------------------------------------------------------------------------------------------------
 // CSS INLINE STYLING USING TAILWIND
 let background = "bg-zinc-900 p-2 ";
@@ -50,10 +46,10 @@ function Projects() {
             <Carousel.Item>
               <img
                 className={`mx-auto object-cover position: relative ${img_size}`}
-                src={adi_ai_project}
+                src="https://i.imgur.com/qa5Xg9H.png"
                 alt="First slide"
               />
-              <Carousel.Caption className="relative text-center absolute bottom-0 left-0  ">
+              <Carousel.Caption className="relative text-center bottom-0 left-0  ">
                 <h3 className={project_header_style_1}>
                   Adi 🤖 | AI Ad Generator App
                 </h3>
@@ -84,11 +80,11 @@ function Projects() {
             <Carousel.Item>
               <img
                 className={`mx-auto object-cover ${img_size}`}
-                src={greengle_project}
+                src="https://i.imgur.com/1F3QuXd.jpg"
                 alt="Second slide"
               />
 
-              <Carousel.Caption className=" relative text-center absolute bottom-0 left-0">
+              <Carousel.Caption className=" relative text-center bottom-0 left-0">
                 <h3 className={project_header_style}>
                   Greengle 🛒 | Digital Carbon Footprint Tracker{" "}
                 </h3>
@@ -120,11 +116,11 @@ function Projects() {
             <Carousel.Item>
               <img
                 className={`mx-auto object-cover ${img_size}`}
-                src={portfolio_project}
+                src="https://i.imgur.com/aMEfzNA.png"
                 alt="Third slide"
               />
 
-              <Carousel.Caption className="relative text-center absolute bottom-0 left-0 ">
+              <Carousel.Caption className=" relative text-center bottom-0 left-0">
                 <div className="pb-4">
                   <h3 className={project_header_style_2}>Portfolio Website</h3>
                   <p className={body_text_style_3}>
@@ -137,7 +133,7 @@ function Projects() {
                     <br></br>
                     <a
                       className="text-blue-600"
-                      href="https://github.com/AdiBhan/PersonalSite"
+                      href="https://github.com/AdiBhan/Portfolio"
                     >
                       [Source Code]
                     </a>
