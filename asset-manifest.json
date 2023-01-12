@@ -1,16 +1,19 @@
 {
   "files": {
-    "main.css": "/PersonalSite/static/css/main.d74c4a44.css",
-    "main.js": "/PersonalSite/static/js/main.f0be9d6c.js",
-    "static/js/787.a86f3764.chunk.js": "/PersonalSite/static/js/787.a86f3764.chunk.js",
-    "static/media/logo.svg": "/PersonalSite/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
-    "index.html": "/PersonalSite/index.html",
-    "main.d74c4a44.css.map": "/PersonalSite/static/css/main.d74c4a44.css.map",
-    "main.f0be9d6c.js.map": "/PersonalSite/static/js/main.f0be9d6c.js.map",
-    "787.a86f3764.chunk.js.map": "/PersonalSite/static/js/787.a86f3764.chunk.js.map"
+    "main.css": "/github.io/Portfolio/static/css/main.b8b6a2a2.css",
+    "main.js": "/github.io/Portfolio/static/js/main.7c947545.js",
+    "static/js/787.b98c23e5.chunk.js": "/github.io/Portfolio/static/js/787.b98c23e5.chunk.js",
+    "static/media/greengle_project.png": "/github.io/Portfolio/static/media/greengle_project.63c471383f11922e9b46.png",
+    "static/media/portfolio_project.png": "/github.io/Portfolio/static/media/portfolio_project.918d7db7395a217c7856.png",
+    "static/media/adi-ai_project.png": "/github.io/Portfolio/static/media/adi-ai_project.9ecd40f90eecf6c9aa55.png",
+    "static/media/resume_logo.png": "/github.io/Portfolio/static/media/resume_logo.16dac8d8d0738c8de571.png",
+    "index.html": "/github.io/Portfolio/index.html",
+    "main.b8b6a2a2.css.map": "/github.io/Portfolio/static/css/main.b8b6a2a2.css.map",
+    "main.7c947545.js.map": "/github.io/Portfolio/static/js/main.7c947545.js.map",
+    "787.b98c23e5.chunk.js.map": "/github.io/Portfolio/static/js/787.b98c23e5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d74c4a44.css",
-    "static/js/main.f0be9d6c.js"
+    "static/css/main.b8b6a2a2.css",
+    "static/js/main.7c947545.js"
   ]
 }
