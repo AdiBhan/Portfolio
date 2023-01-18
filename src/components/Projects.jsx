@@ -3,21 +3,21 @@ import React from "react";
 import Carousel from "react-bootstrap/Carousel";
 //-------------------------------------------------------------------------------------------------
 // CSS INLINE STYLING USING TAILWIND
-let background = "bg-zinc-900 p-2 ";
-let img_size = "h-50 w-50";
-let body_text_style =
+const background = "bg-zinc-900 p-2 ";
+const img_size = "h-50 w-50";
+const body_text_style =
   "alert alert-danger text-black italic font-mono text-base scale-75  border-4 border-red-500 ";
-let body_text_style_2 =
+const body_text_style_2 =
   "alert alert-primary text-black italic font-mono text-base scale-75  border-4 border-sky-500";
-let body_text_style_3 =
+const body_text_style_3 =
   "alert alert-success text-black italic font-mono text-base scale-75 border-4 border-green-500 ";
-let project_header_style =
+const project_header_style =
   "badge rounded-pill text-bg-dark font-bold p-3 badge text-bg-dark text-2xl font-mono scale-75 border-4 border-sky-500";
-let project_header_style_1 =
+const project_header_style_1 =
   "badge rounded-pill text-bg-dark font-bold p-3 badge text-bg-dark text-2xl font-mono scale-75 border-4 border-red-500";
-let project_header_style_2 =
+const project_header_style_2 =
   "badge rounded-pill text-bg-dark font-bold p-3 badge text-bg-dark text-2xl font-mono scale-75 border-4 border-green-500";
-let projects_heading_style =
+const projects_heading_style =
   " border-3 border-black text-black rounded- badge bg-white font-bold p-3  font-bold drop-shadow-lg shadow-black flex-center font-mono text-2xl  hover:overline ";
 //-------------------------------------------------------------------------------------------------
 

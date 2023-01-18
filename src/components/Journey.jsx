@@ -5,11 +5,11 @@ import Profile from "./Profile";
 //-------------------------------------------------------------------------------------------------
 // CSS INLINE STYLING USING TAILWIND
 
-let background = "bg-zinc-900 p-2";
-let inner_background =
+const background = "bg-zinc-900 p-2";
+const inner_background =
   "p-3 m-4  italic border-black border-2 drop-shadow rounded-xl bg-white font-mono";
-let hover_hightlight_color = "badge rounded-pill text-bg-info";
-let headings_style =
+const hover_hightlight_color = "badge rounded-pill text-bg-info";
+const headings_style =
   "badge rounded-pill text-bg-dark font-bold p-3 badge text-bg-dark text-1xl";
 
 //-------------------------------------------------------------------------------------------------
@@ -20,6 +20,8 @@ function Journey() {
       <div id="Journey">
         <div className={background}>
           <p className={inner_background}>
+            <br></br>
+            <br></br>
             <Typewriter
               onInit={(typewriter) => {
                 typewriter
@@ -100,7 +102,7 @@ function Journey() {
                 <br></br>
                 <li className={hover_hightlight_color}>
                   <a href="https://www.bu.edu/academics/cas/courses/cas-cs-131/">
-                    DS280: Spark! UX/UI Design 📱
+                    DS280: S park! UX/UI Design 📱
                   </a>
                   <br></br>
                 </li>
@@ -110,6 +112,8 @@ function Journey() {
               </div>
             </div>
           </p>
+          <br></br>
+          <br></br>
           <br></br>
           <br></br>
         </div>
