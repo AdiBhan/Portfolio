@@ -19,22 +19,22 @@ function Navbar() {
     <>
       <div className={background}>
         <nav className={navigation_bar_style}>
-          <a className={header_style} href="/Journey">
+          <a className={header_style} href="/">
             <a className={hover_style}>[Journey] </a>
           </a>
 
-          <a className={header_style} href="/Projects">
+          <a className={header_style} href="/Projects/">
             <a className={hover_style}>[Projects] </a>
           </a>
           <a className={header_style} href="https://groceryapp-4c7d7.web.app/">
             <a className={hover_style}>[Latest Project] </a>
           </a>
-          <a className={header_style} href="/Skills">
+          <a className={header_style} href="/Skills/">
             <a className={hover_style}>[Skills] </a>
           </a>
 
           <a className={header_style}>
-            <a className={hover_style} href="/Contact">
+            <a className={hover_style} href="/Contact/">
               [Contact]{" "}
             </a>
           </a>
