@@ -7,17 +7,15 @@ function Contact() {
   const contact_heading_style =
     " display-2 m-3 border-3 border-black text-black  badge bg-white font-bold p-3  font-bold drop-shadow-lg shadow-black flex-center font-mono text-2xl  hover:overline ";
   return (
-    <div className="bg-zinc-900">
+    <div className="bg-zinc-900" id="#Contact">
       {" "}
-      <br></br>
-      <br></br>
       <div className={background_body}>
         {" "}
         <p onClick={topFunction} className={contact_heading_style}>
-          [Contact Form]
+          [Contact]
         </p>
         <br></br>
-        <div className="flex flex-col justify-content align-items-center text-white m-3">
+        <div className="flex flex-col justify-content align-items-center text-white m-3 font-mono">
           <div>
             <label className="m-3">Email:</label>
             <input
@@ -53,7 +51,7 @@ function Contact() {
               type="submit"
               className="btn btn-outline-primary hover:bg-inherit hover:text-blue-600 m-3"
             >
-              Send
+              SUBMIT
             </button>
           </div>
         </div>

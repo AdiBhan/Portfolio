@@ -4,7 +4,7 @@
 const icons_hover_style =
   "border-1 border-white divide-x-reverse  m-auto h-7 w-7 mx-2 hover:scale-125";
 const adi_profile_img_style =
-  "  m-auto rounded-lg h-50% w-20% border-double border-4 border-black border";
+  "  m-auto rounded-lg h-50% w-20% border-double border-4 border-black border ";
 const icons_format = "flex flex-row items-center m-auto my-2 ";
 const text_style =
   "font-mono border-1 border-white divide-x-reverse text-black text-center text-2xl  font-bold italic drop-shadow-lg shadow-black flex-center ";

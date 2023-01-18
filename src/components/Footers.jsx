@@ -2,11 +2,11 @@
 // CSS INLINE STYLING USING TAILWIND
 
 const footer_background =
-  "p-2 bg-zinc-900  shadow md:flex md:items-center md:justify-between md:p-2 dark:bg-zinc-900";
+  "p-2 bg-zinc-300  shadow md:flex md:items-center md:justify-between md:p-2 dark:bg-zinc-900";
 const footer_text =
   "text-sm text-right text-gray-400 sm:text-center dark:text-gray-400";
 const footer_hover = "hover:text-bl-200 hover:underline";
-const background = "bg-zinc-900 p-2 ";
+const background = "bg-zinc-800 p-2 ";
 
 //-------------------------------------------------------------------------------------------------
 

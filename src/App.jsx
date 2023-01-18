@@ -1,7 +1,7 @@
 //-------------------------------------------------------------------------------------------------
 // IMPORTS
 import "bootstrap/dist/css/bootstrap.min.css";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { HashRouter } from "react-router-dom";
 import "./App.css";
 import Contact from "./components/Contact";
 import Footers from "./components/Footers";
@@ -18,25 +18,24 @@ function topFunction() {
 //--------------------------------------------------------------------------------------------------
 function App() {
   return (
-    <Router>
+    <HashRouter>
       <div className="App ">
         <Navbar></Navbar>
-        <Route path="/" exact>
+        <HashRouter path="/" exact>
           <Journey></Journey>
-        </Route>
-        <Route path="/Projects">
+        </HashRouter>
+        <HashRouter path="/Projects">
           <Projects></Projects>
-        </Route>
-        <Route path="/Skills">
+        </HashRouter>
+        <HashRouter path="/Skills">
           <Skills></Skills>
-        </Route>
-
-        <Route path="/Contact">
+        </HashRouter>{" "}
+        <HashRouter path="/Contact">
           <Contact></Contact>
-        </Route>
+        </HashRouter>
         <Footers></Footers>
       </div>
-    </Router>
+    </HashRouter>
   );
 }
 export default App;

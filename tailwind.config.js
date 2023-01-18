@@ -8,4 +8,11 @@ module.exports = {
   },
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   plugins: [],
+  theme: {
+    extend: {
+      animation: {
+        wiggle: "wiggle 1s ease-in-out infinite",
+      },
+    },
+  },
 };

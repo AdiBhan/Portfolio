@@ -3,7 +3,7 @@ import React from "react";
 import Carousel from "react-bootstrap/Carousel";
 //-------------------------------------------------------------------------------------------------
 // CSS INLINE STYLING USING TAILWIND
-const background = "bg-zinc-900 p-2 ";
+const background = "p-2 bg-zinc-800 ";
 const img_size = "h-50 w-50";
 const body_text_style =
   "alert alert-danger text-black italic font-mono text-base scale-75  border-4 border-red-500 ";
@@ -30,11 +30,6 @@ function Projects() {
     <>
       <div id="Projects">
         <div className={background}>
-          <br></br>
-          <br></br>
-          <br></br>
-          <br></br>
-          <br></br>
           <p className={projects_heading_style} onClick={topFunction}>
             {" "}
             [Projects]{" "}
@@ -142,13 +137,6 @@ function Projects() {
               </Carousel.Caption>
             </Carousel.Item>
           </Carousel>
-
-          <br></br>
-          <br></br>
-          <br></br>
-          <br></br>
-          <br></br>
-          <br></br>
         </div>
       </div>
     </>
