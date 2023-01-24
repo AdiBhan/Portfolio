@@ -1,50 +1,42 @@
 //-------------------------------------------------------------------------------------------------
 import React from "react";
 import Carousel from "react-bootstrap/Carousel";
+import "semantic-ui-css/semantic.min.css";
+import "../index.css";
 //-------------------------------------------------------------------------------------------------
 // CSS INLINE STYLING USING TAILWIND
-const background = "p-2 bg-zinc-800 ";
 const img_size = "h-50 w-50";
 const body_text_style =
-  "alert alert-danger text-black italic font-mono text-base scale-75  border-4 border-red-500 ";
+  "   alert alert-danger text-black italic font-mono text-base scale-90  border-4 border-red-500 ";
 const body_text_style_2 =
-  "alert alert-primary text-black italic font-mono text-base scale-75  border-4 border-sky-500";
+  " alert alert-primary text-black italic font-mono text-base scale-90  border-4 border-sky-500";
 const body_text_style_3 =
-  "alert alert-success text-black italic font-mono text-base scale-75 border-4 border-green-500 ";
+  " alert alert-success text-black italic font-mono text-base scale-90 border-4 border-green-500 ";
 const project_header_style =
   "badge rounded-pill text-bg-dark font-bold p-3 badge text-bg-dark text-2xl font-mono scale-75 border-4 border-sky-500";
 const project_header_style_1 =
   "badge rounded-pill text-bg-dark font-bold p-3 badge text-bg-dark text-2xl font-mono scale-75 border-4 border-red-500";
 const project_header_style_2 =
   "badge rounded-pill text-bg-dark font-bold p-3 badge text-bg-dark text-2xl font-mono scale-75 border-4 border-green-500";
-const projects_heading_style =
-  " border-3 border-black text-black rounded- badge bg-white font-bold p-3  font-bold drop-shadow-lg shadow-black flex-center font-mono text-2xl  hover:overline ";
+
 //-------------------------------------------------------------------------------------------------
 
-function Projects() {
-  function topFunction() {
-    document.body.scrollTop = 0; // For Safari
-    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-  }
+function Projects(props) {
   return (
     <>
-      <div id="Projects">
-        <div className={background}>
-          <p className={projects_heading_style} onClick={topFunction}>
-            {" "}
-            [Projects]{" "}
-          </p>
+      <div id="Projects " className="animate-bounce-2 ">
+        <div className={props.background}>
           <br></br>
           <br></br>
 
-          <Carousel fade>
-            <Carousel.Item>
+          <Carousel fade className="scale-95">
+            <Carousel.Item className>
               <img
-                className={`mx-auto object-cover position: relative ${img_size}`}
+                className={`border-4 bg-red-500 mx-auto object-cover position: relative ${img_size}`}
                 src="https://i.imgur.com/qa5Xg9H.png"
                 alt="First slide"
               />
-              <Carousel.Caption className="relative text-center bottom-0 left-0  ">
+              <Carousel.Caption className="relative bottom-0 left-0 text-center ">
                 <h3 className={project_header_style_1}>
                   Adi 🤖 | AI Ad Generator App
                 </h3>
@@ -79,7 +71,7 @@ function Projects() {
                 alt="Second slide"
               />
 
-              <Carousel.Caption className=" relative text-center bottom-0 left-0">
+              <Carousel.Caption className="relative bottom-0 left-0 text-center ">
                 <h3 className={project_header_style}>
                   Greengle 🛒 | Digital Carbon Footprint Tracker{" "}
                 </h3>
@@ -115,7 +107,7 @@ function Projects() {
                 alt="Third slide"
               />
 
-              <Carousel.Caption className=" relative text-center bottom-0 left-0">
+              <Carousel.Caption className="relative bottom-0 left-0 text-center ">
                 <div className="pb-4">
                   <h3 className={project_header_style_2}>Portfolio Website</h3>
                   <p className={body_text_style_3}>

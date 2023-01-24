@@ -1,39 +1,54 @@
 //-------------------------------------------------------------------------------------------------
 // IMPORTS
 import "bootstrap/dist/css/bootstrap.min.css";
-import { HashRouter } from "react-router-dom";
+import React from "react";
+import { HashRouter, Route, Switch } from "react-router-dom";
 import "./App.css";
 import Contact from "./components/Contact";
+import Buffer from "./components/ErrorSite";
 import Footers from "./components/Footers";
 import Journey from "./components/Journey";
 import Navbar from "./components/Navbar";
 import Projects from "./components/Projects";
-import Skills from "./components/Skills";
+import Schedule from "./components/Schedule";
 //-------------------------------------------------------------------------------------------------
-function topFunction() {
-  document.body.scrollTop = 0; // For Safari
-  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-}
-
+const background =
+  "p-2 bg-gradient-to-r from-gray-700 via-gray-900 to-black p-2";
 //--------------------------------------------------------------------------------------------------
 function App() {
   return (
     <HashRouter>
-      <div className="App ">
-        <Navbar></Navbar>
-        <HashRouter path="/" exact>
-          <Journey></Journey>
-        </HashRouter>
-        <HashRouter path="/Projects">
-          <Projects></Projects>
-        </HashRouter>
-        <HashRouter path="/Skills">
-          <Skills></Skills>
-        </HashRouter>{" "}
-        <HashRouter path="/Contact">
-          <Contact></Contact>
-        </HashRouter>
-        <Footers></Footers>
+      <div className="w-full h-full App bg-zinc-900">
+        <Navbar background={background} />
+        <Switch>
+          <Route path="/" exact>
+            <Journey background={background} />
+          </Route>
+          <Route path="/Project/">
+            <Projects background={background} />
+          </Route>
+
+          <Route path="/Contact/">
+            <Contact background={background} />
+          </Route>
+          <Route path="/Schedule/">
+            <Schedule background={background} />
+          </Route>
+          <Route path="/Success/">
+            <Buffer
+              heading="Success!"
+              subtext="Your email has been sent. Expect to get a response shortly."
+            />
+          </Route>
+          <Route path="*">
+            <Buffer
+              heading="Error 404!"
+              subtext="Page not found!"
+              background={background}
+            />
+          </Route>
+        </Switch>
+        <Footers />
       </div>
     </HashRouter>
   );

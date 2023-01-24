@@ -37,7 +37,7 @@ code {
 }
 
 .wiggle {
-  animation: wiggle 10s ease-in-out infinite;
+  animation: wiggle 7.5s ease-in-out infinite;
 }
 
 @keyframes fade-in {
@@ -51,4 +51,49 @@ code {
 .fade-in {
   opacity: 0;
   animation: fade-in 0.5s ease-in-out;
+}
+.animate-bounce2 {
+  animation: bounce2 0.8s ease-in-out infinite;
+}
+
+@keyframes bounce2 {
+  0%,
+  100% {
+    transform: translateY(-25%);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% {
+    transform: translateY(0);
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+}
+@-webkit-keyframes swinging {
+  0% {
+    -webkit-transform: rotate(2deg);
+  }
+  50% {
+    -webkit-transform: rotate(-0.1deg);
+  }
+  100% {
+    -webkit-transform: rotate(2deg);
+  }
+}
+
+@keyframes swinging {
+  0% {
+    transform: rotate(2deg);
+  }
+  50% {
+    transform: rotate(-0.1deg);
+  }
+  100% {
+    transform: rotate(2deg);
+  }
+}
+
+.swing {
+  -webkit-transform-origin: 50% 0;
+  transform-origin: 50% 0;
+  -webkit-animation: swinging 4s ease-in-out forwards infinite;
+  animation: swinging 4s ease-in-out forwards infinite;
 }
