@@ -1,8 +1,8 @@
 //-------------------------------------------------------------------------------------------------
+
 import React from "react";
 import Carousel from "react-bootstrap/Carousel";
 import "semantic-ui-css/semantic.min.css";
-import "../index.css";
 //-------------------------------------------------------------------------------------------------
 // CSS INLINE STYLING USING TAILWIND
 const img_size = "h-50 w-50";
@@ -19,24 +19,27 @@ const project_header_style_1 =
 const project_header_style_2 =
   "badge rounded-pill text-bg-dark font-bold p-3 badge text-bg-dark text-2xl font-mono scale-75 border-4 border-green-500";
 
+const img_pos = `mx-auto object-cover ${img_size}`;
+
+const textStyle = "text-blue-600";
+const carouselPos = "relative bottom-0 left-0 text-center";
+const carouselResize = "scale-95";
 //-------------------------------------------------------------------------------------------------
 
 function Projects(props) {
   return (
     <>
-      <div id="Projects " className="animate-bounce-2 ">
+      <div id="Projects ">
         <div className={props.background}>
-          <br></br>
-          <br></br>
-
-          <Carousel fade className="scale-95">
+          <div className={props.divider}></div>
+          <Carousel fade className={carouselResize}>
             <Carousel.Item className>
               <img
-                className={`border-4 bg-red-500 mx-auto object-cover position: relative ${img_size}`}
+                className={img_pos}
                 src="https://i.imgur.com/qa5Xg9H.png"
                 alt="First slide"
               />
-              <Carousel.Caption className="relative bottom-0 left-0 text-center ">
+              <Carousel.Caption className={carouselPos}>
                 <h3 className={project_header_style_1}>
                   Adi 🤖 | AI Ad Generator App
                 </h3>
@@ -56,7 +59,7 @@ function Projects(props) {
                   <b>My Role:</b> Frontend Developer, Backend Developer, AI
                   <br></br>
                   <a
-                    className="text-blue-600"
+                    className={textStyle}
                     href="https://github.com/AdiBhan/bostonhacks-2022"
                   >
                     [Source Code]
@@ -66,12 +69,12 @@ function Projects(props) {
             </Carousel.Item>
             <Carousel.Item>
               <img
-                className={`mx-auto object-cover ${img_size}`}
+                className={img_pos}
                 src="https://i.imgur.com/1F3QuXd.jpg"
                 alt="Second slide"
               />
 
-              <Carousel.Caption className="relative bottom-0 left-0 text-center ">
+              <Carousel.Caption className={carouselPos}>
                 <h3 className={project_header_style}>
                   Greengle 🛒 | Digital Carbon Footprint Tracker{" "}
                 </h3>
@@ -92,7 +95,7 @@ function Projects(props) {
                   <b>My Role:</b> Frontend Developer, Backend Developer, AI
                   <br></br>
                   <a
-                    className="text-blue-600"
+                    className={textStyle}
                     href="https://github.com/AdiBhan/Greengle"
                   >
                     [Source Code]
@@ -102,12 +105,12 @@ function Projects(props) {
             </Carousel.Item>
             <Carousel.Item>
               <img
-                className={`mx-auto object-cover ${img_size}`}
+                className={img_pos}
                 src="https://i.imgur.com/aMEfzNA.png"
                 alt="Third slide"
               />
 
-              <Carousel.Caption className="relative bottom-0 left-0 text-center ">
+              <Carousel.Caption className={carouselPos}>
                 <div className="pb-4">
                   <h3 className={project_header_style_2}>Portfolio Website</h3>
                   <p className={body_text_style_3}>
@@ -119,7 +122,7 @@ function Projects(props) {
                     Bootstrap
                     <br></br>
                     <a
-                      className="text-blue-600"
+                      className={textStyle}
                       href="https://github.com/AdiBhan/Portfolio"
                     >
                       [Source Code]

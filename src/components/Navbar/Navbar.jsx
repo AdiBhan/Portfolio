@@ -19,41 +19,30 @@ const navigation_bar_style =
 function Navbar(props) {
   return (
     <>
-      <div className={props.background}>
-        <div className={background}>
-          <nav className={navigation_bar_style}>
-            <Link className={header_style} to="/">
-              <button className={hover_style}>Journey </button>
-            </Link>
+      <div className="sticky top-0 z-50">
+        <div className={props.background}>
+          <div className={background}>
+            <nav className={navigation_bar_style}>
+              <Link className={header_style} to="/">
+                <button className={hover_style}>Journey </button>
+              </Link>
 
-            <Link className={header_style} to="/Project/">
-              <button className={hover_style} variant="outline success">
-                Projects{" "}
-              </button>
-            </Link>
+              <Link className={header_style} to="/Project/">
+                <button className={hover_style} variant="outline success">
+                  Projects{" "}
+                </button>
+              </Link>
 
-            <Link className={header_style} to="/Contact/">
-              <button className={hover_style} variant="outline success">
-                Contact{" "}
-              </button>
-            </Link>
-          </nav>
+              <Link className={header_style} to="/Contact/">
+                <button className={hover_style} variant="outline success">
+                  Contact{" "}
+                </button>
+              </Link>
+            </nav>
+          </div>
         </div>
 
-        <Snow
-          style={{
-            position: "absolute",
-            zIndex: "-100",
-            width: "100%",
-            height: "100%",
-            color: "red",
-          }}
-          color={"#FFFFFF"}
-          numFlakes={500}
-          snowflakeSize={10}
-          animationInterval={20}
-          animationDuration={2500}
-        />
+        <Snow />
       </div>
     </>
   );

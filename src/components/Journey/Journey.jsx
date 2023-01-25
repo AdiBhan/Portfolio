@@ -3,7 +3,7 @@
 import React from "react";
 import "semantic-ui-css/semantic.min.css";
 import Typewriter from "typewriter-effect";
-import Profile from "./Profile";
+import Profile from "../Profile/Profile";
 //-------------------------------------------------------------------------------------------------
 // CSS INLINE STYLING USING TAILWIND
 
@@ -13,7 +13,9 @@ const hover_hightlight_color =
   "text-black border-2 border-blue-700 hover:scale-105  badge rounded-pill text-bg-info m-1 border-3 rounded-lg  ring-1 ring-shadow-xl/5";
 const headings_style =
   "border-4 border-black badge rounded-pill text-bg-dark font-bold p-3 badge text-bg-dark text-1xl border-2 rounded-lg px-6 py-8 ring-1 ring-shadow-xl/5";
-const textStyle = "text-black hover:text-blue-700";
+const text_style = "text-black hover:text-blue-700";
+const header_spacing = "basis-1/4";
+const flexbox_style = "flex  flex-nowrap m-3";
 //-------------------------------------------------------------------------------------------------
 
 function Journey(props) {
@@ -36,12 +38,12 @@ function Journey(props) {
                   .start();
               }}
             />
-            <div class="ui divider"></div>
+            <div class={props.divider}></div>
             <br></br>
             <br></br>
 
-            <div class="flex  flex-nowrap m-3">
-              <div class="basis-1/5">
+            <div class={flexbox_style}>
+              <div class={header_spacing}>
                 <p className={headings_style}>
                   ☀️ Summer 2022 | Relevant Coursework
                 </p>
@@ -49,14 +51,14 @@ function Journey(props) {
                 <br></br>
                 <li className={hover_hightlight_color}>
                   <a
-                    className={textStyle}
+                    className={text_style}
                     href="https://www.cs.bu.edu/courses/cs111/"
                   >
                     CS111: Introduction to Computer Science I 💾
                   </a>
                 </li>
               </div>
-              <div class="basis-1/4">
+              <div class={header_spacing}>
                 <p className={headings_style}>
                   🍂 Fall 2022 | Relevant Coursework
                 </p>
@@ -64,7 +66,7 @@ function Journey(props) {
                 <br></br>
                 <li className={hover_hightlight_color}>
                   <a
-                    className={textStyle}
+                    className={text_style}
                     href="https://www.cs.bu.edu/courses/cs112/"
                   >
                     CS112: Introduction to Computer Science II 💾
@@ -76,7 +78,7 @@ function Journey(props) {
                 <li className={hover_hightlight_color}>
                   {" "}
                   <a
-                    className={textStyle}
+                    className={text_style}
                     href="https://www.bu.edu/academics/cas/courses/cas-cs-131/"
                   >
                     {" "}
@@ -87,7 +89,7 @@ function Journey(props) {
                 <br></br>
                 <br></br>
               </div>{" "}
-              <div class="basis-1/4">
+              <div className={header_spacing}>
                 <p className={headings_style}>
                   🍃 Spring 2023 | Relevant Coursework
                 </p>
@@ -96,7 +98,7 @@ function Journey(props) {
 
                 <li className={hover_hightlight_color}>
                   <a
-                    className={textStyle}
+                    className={text_style}
                     href="https://www.bu.edu/academics/cas/courses/cas-cs-132/"
                   >
                     CS132: Geometric Algorithms 💾
@@ -105,7 +107,7 @@ function Journey(props) {
                 <br></br>
                 <li className={hover_hightlight_color}>
                   <a
-                    className={textStyle}
+                    className={text_style}
                     href="https://www.howchenn.com/teaching/fall2022"
                   >
                     CS 200: Applied Problem Solving 💾
@@ -115,7 +117,7 @@ function Journey(props) {
 
                 <li className={hover_hightlight_color}>
                   <a
-                    className={textStyle}
+                    className={text_style}
                     href="https://www.bu.edu/academics/cas/courses/cas-cs-210/"
                   >
                     CS210: Computer Systems 💾
@@ -124,7 +126,7 @@ function Journey(props) {
                 <br></br>
                 <li className={hover_hightlight_color}>
                   <a
-                    className={textStyle}
+                    className={text_style}
                     href="https://www.bu.edu/academics/cas/courses/cas-cs-131/"
                   >
                     DS280: Spark! UX/UI Design 📱
@@ -132,15 +134,9 @@ function Journey(props) {
                   <br></br>
                 </li>
               </div>{" "}
-              <div class="basis-1/2 scale-95">
-                <Profile />
-              </div>
+              <Profile />
             </div>
           </p>
-          <br></br>
-          <br></br>
-          <br></br>
-          <br></br>
         </div>
       </div>
     </>

@@ -1,7 +1,10 @@
 import React from "react";
+
+//-------------------------------------------------------------------------------------------------
+// CSS INLINE STYLING USING TAILWIND
+const text_style = "justify-center m-3 text-6xl text-white";
+//-------------------------------------------------------------------------------------------------
 function Buffer(props) {
-  const background =
-    "bg-zinc-900 h-full w-full flex items-center justify-center";
   return (
     <div className={props.background}>
       <br></br>
@@ -14,7 +17,7 @@ function Buffer(props) {
       <br></br>
       <br></br>
       <br></br>
-      <h1 className="justify-center m-3 text-6xl text-white">
+      <h1 className={text_style}>
         {" "}
         {props.heading}
         <p>{props.subtext}</p>
