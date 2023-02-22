@@ -1,16 +1,17 @@
 //-------------------------------------------------------------------------------------------------
 // IMPORTS
 import "bootstrap/dist/css/bootstrap.min.css";
+import { motion } from "framer-motion";
 import React from "react";
 import { HashRouter, Route, Switch } from "react-router-dom";
 import "semantic-ui-css/semantic.min.css";
 import "./App.css";
+import Buffer from "./components/404/ErrorPage";
 import Contact from "./components/Contact/Contact";
-import Buffer from "./components/ErrorPage/ErrorPage";
 import Footers from "./components/Footers/Footers";
 import Journey from "./components/Journey/Journey";
 import Navbar from "./components/Navbar/Navbar";
-import Projects from "./components/Projects/Projects";
+import Projects from "./components/Projects/ProjectsHolder";
 import Schedule from "./components/Schedule/Schedule";
 //-------------------------------------------------------------------------------------------------
 const background =
@@ -28,7 +29,13 @@ function App() {
             <Journey background={background} divider={divider} />
           </Route>
           <Route path="/Project/">
-            <Projects background={background} divider={divider} />
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.5 }}
+            >
+              <Projects background={background} divider={divider} />
+            </motion.div>
           </Route>
 
           <Route path="/Contact/">

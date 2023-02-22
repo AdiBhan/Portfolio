@@ -1,4 +1,5 @@
 import emailjs from "emailjs-com";
+import { motion } from "framer-motion";
 import React, { useRef } from "react";
 import { useHistory } from "react-router-dom";
 import "semantic-ui-css/semantic.min.css";
@@ -10,8 +11,7 @@ function Contact(props) {
   const form_position =
     "flex flex-col content-start m-3 font-mono text-left text-white justify-content align-items-center";
 
-  const submit_button_style =
-    "m-3 text-white scale-90 btn hover:scale-100 ui primary button";
+  const submit_button_style = "m-3 text-white scale-90 btn  ui primary button";
   const section_style = "m-3 border border-white btn btn-dark";
   const form_type = "content-start";
   //-------------------------------------------------------------------------------------------------
@@ -38,40 +38,53 @@ function Contact(props) {
   return (
     <div className={props.background} id="#Contact">
       {" "}
-      <form ref={form} className={form_type} onSubmit={sendEmail}>
-        {" "}
-        <div className={background_body}>
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.25 }}
+      >
+        <form ref={form} className={form_type} onSubmit={sendEmail}>
           {" "}
-          <br></br>
-          <div className={props.divider}></div>
-          <div className={form_position}>
-            <Section name="Name" />
+          <div className={background_body}>
+            {" "}
+            <br></br>
+            <div className={props.divider}></div>
+            <div className={form_position}>
+              <Section name="Name" />
 
-            <Section name="Email" />
-            <Section name="Subject" />
+              <Section name="Email" />
+              <Section name="Subject" />
 
-            <div>
-              {" "}
-              <label className={section_style}>
-                Message:
-                <textarea
-                  class="form-control"
-                  id="exampleFormControlTextarea1"
-                  rows="7"
-                  cols="90"
-                  name="message"
-                ></textarea>
-              </label>
-            </div>
-            <div>
-              {" "}
-              <button type="submit" className={submit_button_style}>
-                SUBMIT
-              </button>
+              <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+                <div>
+                  {" "}
+                  <label className={section_style}>
+                    Message:
+                    <textarea
+                      class="form-control"
+                      id="exampleFormControlTextarea1"
+                      rows="7"
+                      cols="90"
+                      name="message"
+                    ></textarea>
+                  </label>
+                </div>
+              </motion.div>
+              <div>
+                {" "}
+                <motion.div
+                  whileHover={{ scale: 1.2 }}
+                  whileTap={{ scale: 0.9 }}
+                >
+                  <button type="submit" className={submit_button_style}>
+                    SUBMIT
+                  </button>
+                </motion.div>
+              </div>
             </div>
           </div>
-        </div>
-      </form>
+        </form>
+      </motion.div>
     </div>
   );
 }

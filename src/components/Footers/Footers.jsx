@@ -24,8 +24,7 @@ function Footers(props) {
                 class={footer_hover}
               >
                 Click to view source
-              </a>
-              .
+              </a>{" "}
             </span>
           </footer>{" "}
         </div>

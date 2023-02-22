@@ -1,10 +1,12 @@
 //-------------------------------------------------------------------------------------------------
 // TAILWIND CSS Styling
-const section_style = "m-3 border border-white btn btn-dark";
+import { motion } from "framer-motion";
+const section_style = "m-3 border border-white btn btn-dark shadow-xl";
+
 //-------------------------------------------------------------------------------------------------
 const Section = (props) => {
   return (
-    <div>
+    <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
       <label className={section_style}>
         {props.name}
         <input
@@ -15,7 +17,7 @@ const Section = (props) => {
           placeholder={props.name}
         ></input>
       </label>
-    </div>
+    </motion.div>
   );
 };
 

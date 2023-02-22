@@ -8,7 +8,7 @@ const Snow = (props) => {
         height: "100%",
         color: "red",
       }}
-      color={"#FFFFFF"}
+      color={"red"}
       numFlakes={500}
       snowflakeSize={10}
       animationInterval={20}

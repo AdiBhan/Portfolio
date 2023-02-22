@@ -1,9 +1,11 @@
 //-------------------------------------------------------------------------------------------------
 // IMPORTS
+
 import React from "react";
 import "semantic-ui-css/semantic.min.css";
 import Typewriter from "typewriter-effect";
-import Profile from "../Profile/Profile";
+import Profile from "./Profile";
+
 //-------------------------------------------------------------------------------------------------
 // CSS INLINE STYLING USING TAILWIND
 
@@ -32,7 +34,7 @@ function Journey(props) {
               onInit={(typewriter) => {
                 typewriter
                   .typeString(
-                    "Hi there! Welcome to my website. I am a sophomore at Boston University, majoring in Computer Science. Currently, I am actively pursuing an 2023 Summer Software Development Internship. As a problem solver I love to tackle any challenge which comes my way. My expertise is in Java and Python, and am currently teaching myself ReactJS, along with my coursework. I like to showcase my abilities on projects at local hackathons. Check out my journey, projects, and feel free to contact me below!"
+                    "Hi there! Welcome to my website. I am a sophomore at Boston University, majoring in Computer Science. Currently, I am actively pursuing an 2023 Summer Software Development Internship. As a problem solver I love to tackle any challenge which comes my way. My expertise is in Java,Python,ReactJS/NextJS and am, along with my coursework. I like to showcase my abilities on projects at local hackathons. Check out my journey, projects, and feel free to contact me below!"
                   )
 
                   .start();
@@ -95,7 +97,6 @@ function Journey(props) {
                 </p>
                 <br></br>
                 <br></br>
-
                 <li className={hover_hightlight_color}>
                   <a
                     className={text_style}
@@ -114,7 +115,6 @@ function Journey(props) {
                   </a>
                 </li>
                 <br></br>
-
                 <li className={hover_hightlight_color}>
                   <a
                     className={text_style}
@@ -122,7 +122,7 @@ function Journey(props) {
                   >
                     CS210: Computer Systems 💾
                   </a>
-                </li>
+                </li>{" "}
                 <br></br>
                 <li className={hover_hightlight_color}>
                   <a
@@ -132,7 +132,7 @@ function Journey(props) {
                     DS280: Spark! UX/UI Design 📱
                   </a>
                   <br></br>
-                </li>
+                </li>{" "}
               </div>{" "}
               <Profile />
             </div>
