@@ -7,6 +7,7 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import "semantic-ui-css/semantic.min.css";
 import "./App.css";
 import Buffer from "./components/404/ErrorPage";
+import Design from "./components/Background/Design";
 import Contact from "./components/Contact/Contact";
 import Footers from "./components/Footers/Footers";
 import JourneyHolder from "./components/Journey/JourneyHolder";
@@ -24,6 +25,8 @@ const background_buffer =
 function App() {
   return (
     <BrowserRouter>
+      <Design />
+
       <div className={background_buffer}>
         <Navbar background={background} />
         <Switch>

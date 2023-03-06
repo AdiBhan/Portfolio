@@ -14,7 +14,7 @@ import Timeline from "./Timeline";
 // CSS INLINE STYLING USING TAILWIND
 
 const inner_background =
-  "p-3 m-4  rounded-lg px-6 py-8 ring-2 ring--black border-2 border-black ring-inset italic  drop-shadow rounded-xl bg-white font-mono";
+  "p-3 m-4  rounded-lg px-6 py-8 ring-2 ring--black border-2  rounded-b-lg border-black ring-inset italic  drop-shadow rounded-xl bg-white font-mono";
 
 //-------------------------------------------------------------------------------------------------
 
@@ -22,10 +22,10 @@ function Journey(props) {
   return (
     <>
       <div id="Journey">
-        <div className={props.background}>
+        <div className="page_styling">
           {" "}
           <div class={props.divider}></div>{" "}
-          <p className={inner_background}>
+          <p className={`${inner_background} page_styling`}>
             {" "}
             <div class="ui segment">
               {" "}
@@ -49,11 +49,11 @@ function Journey(props) {
               </div>
               <div class="ui segment">
                 <Typewriter
-                  className="indent-8 typewriter_size  "
+                  className="indent-8 typewriter_size "
                   onInit={(typewriter) => {
                     typewriter
                       .typeString(
-                        "Adi: Hi there! Welcome to my website. I am a sophomore at Boston University, majoring in Computer Science. Currently, I am actively pursuing an 2023 Summer Software Development Internship. As a problem solver I love to tackle any challenge which comes my way. My expertise is in Java,Python,ReactJS/NextJS and am, along with my coursework. I like to showcase my abilities on projects at local hackathons. Check out my journey, projects, and feel free to contact me below!"
+                        "Adi : Hi there! Welcome to my website. I am a sophomore at Boston University, majoring in Computer Science. Currently, I am actively pursuing an 2023 Summer Software Development Internship. As a problem solver I love to tackle any challenge which comes my way. My expertise is in Java,Python,ReactJS/NextJS and am, along with my coursework. I like to showcase my abilities on projects at local hackathons. Check out my journey, projects, and feel free to contact me below!"
                       )
 
                       .start();

@@ -38,58 +38,63 @@ function Contact(props) {
   };
 
   return (
-    <div className={props.background} id="#Contact">
+    <>
       {" "}
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 0.25 }}
-      >
-        {" "}
-        <br></br> <br></br>
-        <form ref={form} className={form_type} onSubmit={sendEmail}>
-          <div className={background_body}>
-            {" "}
-            <br></br> <br></br>
-            <div className={props.divider}></div> <br></br> <br></br>
-            <h1 className="form_header">Contact Me</h1>
-            <div className={form_position}>
-              <Section name="Name" />
-              <Section name="Email" />
-              <Section name="Subject" />
-              <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
-                <div>
-                  {" "}
-                  <label className={section_style}>
-                    Message:
-                    <textarea
-                      class="form-control"
-                      id="exampleFormControlTextarea1"
-                      rows="7"
-                      cols="90"
-                      name="message"
-                      placeholder="Type your message here"
-                    ></textarea>
-                  </label>
-                </div>
-              </motion.div>
-              <div>
-                {" "}
+      <div className="sticky top-0 z-50 bg-transparent">
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.25 }}
+        >
+          {" "}
+          <br></br> <br></br>
+          <form ref={form} className={form_type} onSubmit={sendEmail}>
+            <div className={background_body}>
+              {" "}
+              <br></br> <br></br>
+              <div className={props.divider}></div> <br></br> <br></br>
+              <h1 className="form_header">Contact Me</h1>
+              <div className={form_position}>
+                <Section name="Name" />
+                <Section name="Email" />
+                <Section name="Subject" />
                 <motion.div
-                  whileHover={{ scale: 1.2 }}
+                  whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.9 }}
                 >
-                  <button type="submit" className={submit_button_style}>
-                    SUBMIT
-                  </button>{" "}
-                  <br></br> <br></br>
+                  <div>
+                    {" "}
+                    <label className={section_style}>
+                      Message:
+                      <textarea
+                        class="form-control"
+                        id="exampleFormControlTextarea1"
+                        rows="7"
+                        cols="90"
+                        name="message"
+                        placeholder="Type your message here"
+                      ></textarea>
+                    </label>
+                  </div>
                 </motion.div>
+                <div>
+                  {" "}
+                  <motion.div
+                    whileHover={{ scale: 1.2 }}
+                    whileTap={{ scale: 0.9 }}
+                  >
+                    <button type="submit" className={submit_button_style}>
+                      SUBMIT
+                    </button>{" "}
+                    <br></br> <br></br>
+                  </motion.div>
+                </div>
               </div>
             </div>
-          </div>
-        </form>
-      </motion.div>
-    </div>
+          </form>
+        </motion.div>
+      </div>
+    </>
   );
 }
 export default Contact;

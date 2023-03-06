@@ -13,9 +13,11 @@ const footer_style =
 function Footers(props) {
   return (
     <>
-      <span class={`${footer_text} footer_text_mobile footer_text_sty`}>
-        All Rights Reserved | 2023 Aditya Bhan ©
-      </span>
+      <div className={footer_style}>
+        <span class={`${footer_text} footer_text_mobile footer_text_sty`}>
+          All Rights Reserved | 2023 Aditya Bhan ©
+        </span>
+      </div>
     </>
   );
 }

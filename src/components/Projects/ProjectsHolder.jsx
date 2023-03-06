@@ -52,7 +52,13 @@ function Projects(props) {
           <br></br> <br></br>
           <div className={props.background}>
             <div className={props.divider}></div>
-            <Carousel fade className={carouselResize}>
+            <Carousel
+              showControls={true}
+              showIndicators={true}
+              variant="dark"
+              fade
+              className={carouselResize}
+            >
               {/* Project 1 */}
               <Carousel.Item className>
                 <img
@@ -233,7 +239,7 @@ function Projects(props) {
                 <Carousel.Caption className={carouselPos}>
                   <div className="pb-4">
                     <h3 className={`${project_header_style_5} header_style`}>
-                      ParentAlly | Empowering Single Parents **NEW**
+                      ParentAlly **NEW**
                     </h3>
                     <p className={`body_sty ${body_text_style_5}`}>
                       <b>Introduction:</b>

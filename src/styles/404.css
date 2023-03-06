@@ -12,7 +12,7 @@
   text-align: center;
   animation: spinning 3s alternate infinite;
 }
-.ErrorStyleSubtitle {
+.yo {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -22,8 +22,6 @@
   text-align: center;
   color: #fff;
   text-shadow: 5px 5px 7px #000000;
-
-  text-align: center;
 }
 @keyframes spinning {
   0% {
