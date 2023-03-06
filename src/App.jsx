@@ -3,30 +3,32 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import { motion } from "framer-motion";
 import React from "react";
-import { HashRouter, Route, Switch } from "react-router-dom";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 import "semantic-ui-css/semantic.min.css";
 import "./App.css";
 import Buffer from "./components/404/ErrorPage";
 import Contact from "./components/Contact/Contact";
 import Footers from "./components/Footers/Footers";
-import Journey from "./components/Journey/Journey";
+import JourneyHolder from "./components/Journey/JourneyHolder";
 import Navbar from "./components/Navbar/Navbar";
 import Projects from "./components/Projects/ProjectsHolder";
 import Schedule from "./components/Schedule/Schedule";
+import "./styles/index.css";
 //-------------------------------------------------------------------------------------------------
 const background =
-  "p-2 bg-gradient-to-r from-gray-700 via-gray-900 to-black p-2";
+  "p-2 bg-gradient-to-r from-gray-700 via-gray-900 to-black p-2 bg-cover bg-center bg-cover bg-no-repeat overflow-x-hidden";
 const divider = "ui divider";
-const background_buffer = "w-full h-full App bg-zinc-900";
+const background_buffer =
+  "w-full h-full App bg-zinc-900 overflow-x-hidden overflow-y-hidden";
 //--------------------------------------------------------------------------------------------------
 function App() {
   return (
-    <HashRouter>
+    <BrowserRouter>
       <div className={background_buffer}>
         <Navbar background={background} />
         <Switch>
           <Route path="/" exact>
-            <Journey background={background} divider={divider} />
+            <JourneyHolder background={background} divider={divider} />
           </Route>
           <Route path="/Project/">
             <motion.div
@@ -60,7 +62,7 @@ function App() {
         </Switch>
         <Footers />
       </div>
-    </HashRouter>
+    </BrowserRouter>
   );
 }
 export default App;

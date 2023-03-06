@@ -1,0 +1,15 @@
+.image_style {
+  border-radius: 15%;
+  border: 2px solid #1a1919b3;
+
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+.rotation {
+  transform: rotate(-2deg);
+  margin-right: 5px;
+}
+.image_style:hover {
+  box-shadow: 1 1 20px rgba(157, 90, 90, 0.5);
+}

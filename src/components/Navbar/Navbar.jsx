@@ -20,7 +20,7 @@ const navigation_bar_style =
 function Navbar(props) {
   return (
     <>
-      <div className="sticky top-0 z-50">
+      <div className="sticky top-0 z-50 navbar_style">
         <div className={props.background}>
           <div className={background}>
             <nav className={navigation_bar_style}>

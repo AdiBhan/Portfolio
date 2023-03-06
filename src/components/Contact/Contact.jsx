@@ -3,6 +3,8 @@ import { motion } from "framer-motion";
 import React, { useRef } from "react";
 import { useHistory } from "react-router-dom";
 import "semantic-ui-css/semantic.min.css";
+import "../../styles/contact.css";
+import "../../styles/skills.css";
 import Section from "./Section";
 function Contact(props) {
   //-------------------------------------------------------------------------------------------------
@@ -43,18 +45,18 @@ function Contact(props) {
         animate={{ opacity: 1 }}
         transition={{ duration: 0.25 }}
       >
+        {" "}
+        <br></br> <br></br>
         <form ref={form} className={form_type} onSubmit={sendEmail}>
-          {" "}
           <div className={background_body}>
             {" "}
-            <br></br>
-            <div className={props.divider}></div>
+            <br></br> <br></br>
+            <div className={props.divider}></div> <br></br> <br></br>
+            <h1 className="form_header">Contact Me</h1>
             <div className={form_position}>
               <Section name="Name" />
-
               <Section name="Email" />
               <Section name="Subject" />
-
               <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
                 <div>
                   {" "}
@@ -66,6 +68,7 @@ function Contact(props) {
                       rows="7"
                       cols="90"
                       name="message"
+                      placeholder="Type your message here"
                     ></textarea>
                   </label>
                 </div>
@@ -78,7 +81,8 @@ function Contact(props) {
                 >
                   <button type="submit" className={submit_button_style}>
                     SUBMIT
-                  </button>
+                  </button>{" "}
+                  <br></br> <br></br>
                 </motion.div>
               </div>
             </div>

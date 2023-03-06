@@ -8,7 +8,7 @@ function Schedule(props) {
         <img
           className={scheduleStyle}
           alt="Schedule"
-          src="https://i.gyazo.com/ff82849ef0a3af9273cae7022389caca.png"
+          src="https://i.gyazo.com/c6570107a46e1385ac2842b4d6ddc9d7.png"
         ></img>
       </div>{" "}
       <div className={schedulePos}>

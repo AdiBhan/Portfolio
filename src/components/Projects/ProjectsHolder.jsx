@@ -4,6 +4,8 @@ import { motion } from "framer-motion";
 import React from "react";
 import Carousel from "react-bootstrap/Carousel";
 import "semantic-ui-css/semantic.min.css";
+import "../../styles/index.css";
+import "./Projects.css";
 //-------------------------------------------------------------------------------------------------
 // CSS INLINE STYLING USING TAILWIND
 const img_size = "h-50 w-50";
@@ -24,6 +26,11 @@ const project_header_style_2 =
 
 const project_header_style_3 =
   "badge rounded-pill text-bg-dark font-bold p-3 badge text-bg-dark text-2xl font-mono scale-75 border-4 border-yellow-500";
+
+const project_header_style_5 =
+  "badge rounded-pill text-bg-dark font-bold p-3 badge text-bg-dark text-2xl font-mono scale-75 border-4 border-purple-500";
+const body_text_style_5 =
+  " alert  alert-dark text-black italic font-mono text-base scale-90 border-4 border-purple-500 ";
 const img_pos = `mx-auto object-cover ${img_size}`;
 
 const textStyle = "text-blue-600 m-2";
@@ -41,21 +48,23 @@ function Projects(props) {
         whileClick={{ scale: 0.9 }}
       >
         <div id="Projects ">
+          {" "}
+          <br></br> <br></br>
           <div className={props.background}>
             <div className={props.divider}></div>
             <Carousel fade className={carouselResize}>
               {/* Project 1 */}
               <Carousel.Item className>
                 <img
-                  className={img_pos}
+                  className={` project_styling ${img_pos}`}
                   src="https://i.imgur.com/qa5Xg9H.png"
                   alt="First slide"
                 />
-                <Carousel.Caption className={carouselPos}>
-                  <h3 className={project_header_style_1}>
+                <Carousel.Caption className={`${carouselPos} `}>
+                  <h3 className={`${project_header_style_1} header_style`}>
                     Adi 🤖 | AI Ad Generator App
                   </h3>
-                  <p className={body_text_style}>
+                  <p className={`body_sty ${body_text_style}`}>
                     <b>Introduction:</b>
                     <br></br> Have you ever run ads before? Probably not. It
                     costs $200 on average to create a professional marketing
@@ -63,15 +72,18 @@ function Projects(props) {
                     piece, we instantly generate a poster for you. So anyone can
                     promote their own ventures! <br></br>
                     <br></br>
-                    <b>Winner: </b>BostonHacks 2022 Hackathon, Boston MA
-                    <br></br>
-                    <b>Software Used:</b> React Native, Python, Frameworks:
-                    Django, AI: Dalle-2, GPT-3
-                    <br></br>
-                    <b>My Role:</b> Frontend Developer, Backend Developer, AI
-                    <br></br>
+                    <div className="mb-3">
+                      <b>Winner: </b>BostonHacks 2022 Hackathon, Boston MA
+                    </div>
+                    <div className="mb-3">
+                      <b>Software Used:</b> React Native, Python, Frameworks:
+                      Django, AI: Dalle-2, GPT-3
+                    </div>
+                    <div className="mb-3">
+                      <b>My Role:</b> FullStack Developer
+                    </div>
                     <a
-                      className={textStyle}
+                      className={`${textStyle} sourcecodebutton`}
                       href="https://github.com/AdiBhan/bostonhacks-2022"
                     >
                       [Source Code]
@@ -82,16 +94,18 @@ function Projects(props) {
               {/* Project 2 */}
               <Carousel.Item>
                 <img
-                  className={img_pos}
+                  className={` project_styling ${img_pos}`}
                   src="https://i.imgur.com/1F3QuXd.jpg"
                   alt="Second slide"
                 />
 
-                <Carousel.Caption className={carouselPos}>
-                  <h3 className={project_header_style}>
-                    Greengle 🛒 | Digital Carbon Footprint Tracker{" "}
+                <Carousel.Caption
+                  className={` ${carouselPos} carousel_center_mobile`}
+                >
+                  <h3 className={`${project_header_style} header_style`}>
+                    Greengle 🛒 | Digital CO₂ Tracker{" "}
                   </h3>
-                  <p className={body_text_style_2}>
+                  <p className={`body_sty ${body_text_style_2}`}>
                     <b>Introduction:</b>
                     <br></br> Greengle is a companion site for Amazon.com, that
                     helps consumers estimate the carbon footprint of their
@@ -101,14 +115,17 @@ function Projects(props) {
                     distance between the buyer's address and the nearest Amazon
                     fullfilment center. <br></br>
                     <br></br>
-                    <b> Winner: </b> BU Spark Hackathon 2022, Boston MA
-                    <br></br>
-                    <b>Software Used:</b> React, NextJS, Flask, Python
-                    <br></br>
-                    <b>My Role:</b> Frontend Developer, Backend Developer, AI
-                    <br></br>
+                    <div className="mb-3">
+                      <b> Winner: </b> BU Spark Hackathon 2022, Boston MA
+                    </div>{" "}
+                    <div className="mb-3">
+                      <b>Software Used:</b> React, NextJS, Flask, Python
+                    </div>
+                    <div className="mb-3">
+                      <b>My Role:</b> FullStack Developer
+                    </div>
                     <a
-                      className={textStyle}
+                      className={`${textStyle} sourcecodebutton`}
                       href="https://github.com/AdiBhan/Greengle"
                     >
                       [Source Code]
@@ -119,30 +136,39 @@ function Projects(props) {
               {/* Project 3 */}
               <Carousel.Item>
                 <img
-                  className={img_pos}
-                  src="https://i.gyazo.com/21d6e0f9c7dfb40659992d0994f3449a.png"
+                  className={` project_styling ${img_pos}`}
+                  src="https://i.gyazo.com/0119564a4dbd3c5af08d2ebe65aaf5d7.png"
                   alt="Third slide"
                 />
 
                 <Carousel.Caption className={carouselPos}>
                   <div className="pb-4">
-                    <h3 className={project_header_style_2}>
+                    <h3 className={`${project_header_style_2} header_style`}>
                       Portfolio Website
                     </h3>
-                    <p className={body_text_style_3}>
+                    <p className={`body_sty ${body_text_style_3}`}>
                       <b>Introduction:</b>
                       <br></br>This is my personal portfolio website.
                       <br></br>
                       <br></br>
-                      <b>Software Used: </b> React, Typescript, TailwindCSS,
-                      Bootstrap
-                      <br></br>
-                      <a
-                        className={textStyle}
-                        href="https://github.com/AdiBhan/Portfolio"
-                      >
-                        [Source Code]
-                      </a>
+                      <div className="mb-3">
+                        <b>Software Used: </b> React, Typescript, TailwindCSS,
+                        Bootstrap
+                      </div>
+                      <div className="horz_container">
+                        <a
+                          className={`${textStyle} sourcecodebutton`}
+                          href="https://adibhan.github.io/Portfolio/"
+                        >
+                          [Demo]
+                        </a>{" "}
+                        <a
+                          className={`${textStyle} sourcecodebutton`}
+                          href="https://github.com/AdiBhan/Portfolio"
+                        >
+                          [Source Code]
+                        </a>
+                      </div>
                     </p>
                   </div>
                 </Carousel.Caption>
@@ -151,17 +177,17 @@ function Projects(props) {
               {/* Project 4 */}
               <Carousel.Item>
                 <img
-                  className={img_pos}
+                  className={` project_styling ${img_pos}`}
                   src="https://i.gyazo.com/50f4ca9ffb3c1451f2b11b075d9e0444.png"
                   alt="Third slide"
                 />
 
                 <Carousel.Caption className={carouselPos}>
                   <div className="pb-4">
-                    <h3 className={project_header_style_3}>
-                      USColleges **NEW**
+                    <h3 className={`${project_header_style_3} header_style`}>
+                      USColleges
                     </h3>
-                    <p className={body_text_style_4}>
+                    <p className={`body_sty ${body_text_style_4}`}>
                       <b>Introduction:</b>
                       <br></br>Introducing "USColleges" a one-stop website for
                       all your college ranking needs! This website brings
@@ -173,12 +199,74 @@ function Projects(props) {
                       fit for you.
                       <br></br>
                       <br></br>
-                      <b>Software Used: </b> React, TailwindCSS,Semantic UI,
-                      Firebase, Render, Flask
+                      <div className="mb-3">
+                        <b>Software Used: </b> React, TailwindCSS,Semantic UI,
+                        Firebase, Render, Flask
+                      </div>
+                      <div className="horz_container">
+                        <a
+                          className={`${textStyle} sourcecodebutton`}
+                          href="http://uscolleges.live/"
+                        >
+                          [Demo]
+                        </a>{" "}
+                        <a
+                          className={`${textStyle} sourcecodebutton`}
+                          href="https://github.com/AdiBhan/USColleges"
+                        >
+                          [Source Code]
+                        </a>
+                      </div>
+                    </p>
+                  </div>
+                </Carousel.Caption>
+              </Carousel.Item>
+
+              {/* Project 5 */}
+              <Carousel.Item>
+                <img
+                  className={` project_styling ${img_pos}`}
+                  src="https://user-images.githubusercontent.com/55467050/221664692-cf9fbbd3-3bfb-421c-9535-94b541e23a72.png"
+                  alt="Third slide"
+                />
+
+                <Carousel.Caption className={carouselPos}>
+                  <div className="pb-4">
+                    <h3 className={`${project_header_style_5} header_style`}>
+                      ParentAlly | Empowering Single Parents **NEW**
+                    </h3>
+                    <p className={`body_sty ${body_text_style_5}`}>
+                      <b>Introduction:</b>
+                      <br></br>Created for the 2023 Civic Tech Hackathon. Our
+                      website connects single parents by geographic area. It has
+                      many different places of interaction. For example,
+                      Sharespace offers a place for individuals to exchange
+                      goods that are no longer needed, and our Programs catalog
+                      highlights government and nonprofit financial
+                      opportunities.
                       <br></br>
-                      <a className={textStyle} href="http://uscolleges.live/">
-                        [Demo]
-                      </a>
+                      <br></br>
+                      <div className="mb-3">
+                        <b>Software Used: </b> HTML, CSS, JavaScript, Bootstrap,
+                        Django, GPT-3, Express
+                      </div>{" "}
+                      <div className="mb-3">
+                        <b>My Role:</b> FullStack Developer
+                      </div>
+                      <div className="horz_container">
+                        <a
+                          className={`${textStyle} sourcecodebutton`}
+                          href="https://parentally.social/"
+                        >
+                          [Demo]
+                        </a>{" "}
+                        <a
+                          className={`${textStyle} sourcecodebutton`}
+                          href="https://devpost.com/software/parentally-empowering-single-parents?ref_content=my-projects-tab&ref_feature=my_projects"
+                        >
+                          [Source Code]
+                        </a>
+                      </div>
                     </p>
                   </div>
                 </Carousel.Caption>

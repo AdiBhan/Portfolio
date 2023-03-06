@@ -1,9 +1,6 @@
 import React from "react";
+import "../../styles/404.css";
 
-//-------------------------------------------------------------------------------------------------
-// CSS INLINE STYLING USING TAILWIND
-const text_style = "justify-center m-3 text-6xl text-white";
-//-------------------------------------------------------------------------------------------------
 function Buffer(props) {
   return (
     <div className={props.background}>
@@ -14,20 +11,15 @@ function Buffer(props) {
       <br></br>
       <br></br>
       <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <h1 className={text_style}>
-        {" "}
-        {props.heading}
-        <p>{props.subtext}</p>
-      </h1>
       <br></br> <br></br>
       <br></br>
       <br></br>
       <br></br>
+      <h1 className="ErrorStyle "> {props.heading}</h1>
+      <h1 className="ErrorStyleSubtitle"> Page Not Found</h1>
+      <br></br> <br></br>
       <br></br>
-      <br></br>
+      <br></br> <br></br>
       <br></br>
       <br></br>
       <br></br>

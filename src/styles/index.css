@@ -81,13 +81,13 @@ code {
 
 @keyframes swinging {
   0% {
-    transform: rotate(2deg);
+    transform: rotate(1deg);
   }
   50% {
     transform: rotate(-0.1deg);
   }
   100% {
-    transform: rotate(2deg);
+    transform: rotate(1deg);
   }
 }
 
@@ -96,4 +96,107 @@ code {
   transform-origin: 50% 0;
   -webkit-animation: swinging 4s ease-in-out forwards infinite;
   animation: swinging 4s ease-in-out forwards infinite;
+}
+
+/* Writing media queries for all my files... */
+
+/* Mobile */
+@media screen and (max-width: 768px) {
+  /* Journey Section */
+  .flexbox_style_mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .footer_text_mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.1rem;
+    flex-wrap: wrap;
+    overflow-wrap: break-word;
+  }
+
+  /* Projects Section */
+  .carousel_center_mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .header_center_mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .intro_style {
+    display: none;
+  }
+  .timeline_mobile_screens {
+    scale: 90%;
+    position: relative;
+    bottom: 70px;
+  }
+}
+
+/* Regular */
+.flexbox_style {
+  display: flex;
+
+  justify-content: center;
+  margin: 1rem;
+  flex-wrap: nowrap;
+}
+
+.fly-in-right {
+  animation: fly-in-right 1s ease-in-out forwards;
+}
+.typewriter_size {
+  font-size: 4rem;
+}
+.navbar_style {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: all 0.2s ease-in-out;
+  z-index: 100;
+}
+
+.navbar_style.sticky {
+  position: fixed;
+  background-color: #fff;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+}
+.profile_pos {
+  position: relative;
+  left: 15%;
+}
+.intro_horz_container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  margin: 1rem;
+}
+.pos_links {
+  width: 50%;
+  position: relative;
+  left: 2%;
+  top: 30px;
+}
+/* Animation fly in from right */
+@keyframes fly-in-right {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }

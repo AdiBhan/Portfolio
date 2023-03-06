@@ -1,0 +1,55 @@
+.project_styling {
+  box-shadow: 5px 5px 2px #000000;
+  border-radius: 10px;
+  margin: 10px;
+  border-radius: 5%;
+}
+.project_styline:hover {
+  box-shadow: 5px 5px 2px #000000;
+  border-radius: 10px;
+  margin: 10px;
+  border-radius: 5%;
+  transform: scale(1.1);
+  transition: all 0.5s ease-in-out;
+}
+.body_sty {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 1.2rem;
+
+  text-shadow: 0.2px 0.2px 0.2px #000000;
+
+  border-radius: 10px;
+  box-shadow: 5px 5px 2px #000000;
+}
+.header_style {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-shadow: 0.2px 0.2px 0.2px #000000;
+  box-shadow: 5px 5px 2px #000000;
+  border-radius: 10px;
+}
+@keyframes animate {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.sourcecodebutton {
+  display: flex;
+  justify-content: center;
+}
+.sourcecodebutton:hover {
+  animation: animate 3s ease-in;
+}
