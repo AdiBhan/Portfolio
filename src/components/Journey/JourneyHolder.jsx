@@ -9,7 +9,6 @@ import "../../styles/index.css";
 import "../../styles/skills.css";
 import Profile from "./Profile";
 import SkillsHolder from "./Skills/SkillsHolder";
-import Timeline from "./Timeline";
 //-------------------------------------------------------------------------------------------------
 // CSS INLINE STYLING USING TAILWIND
 
@@ -25,8 +24,7 @@ function Journey(props) {
         <div className="page_styling">
           {" "}
           <div class={props.divider}></div>{" "}
-          <p className={`${inner_background} page_styling`}>
-            {" "}
+          <p className={`${inner_background} `}>
             <div class="ui segment">
               {" "}
               <div class="intro_horz_container ">
@@ -61,9 +59,9 @@ function Journey(props) {
                 />{" "}
               </div>
             </div>{" "}
-            <div class={props.divider}></div>
+            {/* <div class={props.divider}></div>
             <Timeline />
-            <div class={props.divider}></div>
+            <div class={props.divider}></div> */}
             <SkillsHolder />
             <div class={props.divider}></div>
           </p>

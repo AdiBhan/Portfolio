@@ -1,19 +1,20 @@
 import React from "react";
+import "semantic-ui-css/semantic.min.css";
 import "../../styles/index.css";
 import "../../styles/skills.css";
 
 function Timeline() {
   const hover_hightlight_color =
-    "text-black border-2 border-blue-700 hover:scale-105  badge rounded-pill text-bg-info m-1 border-3 rounded-lg  ring-1 ring-shadow-xl/5 scale-110 m-2";
+    "text-black border-2 border-white hover:scale-105  badge rounded-pill  m-1 border-3 rounded-lg  ring-1 ring-shadow-x1/5  m-2";
   const headings_style =
     "border-4 border-black badge rounded-pill text-bg-dark font-bold p-3 badge text-bg-dark text-1xl border-2 rounded-lg px-6 py-8 ring-1 ring-shadow-xl/5 scale-110";
-  const text_style = "text-black hover:text-blue-700 scale-110";
+
   const header_spacing = "basis-1/4 mt-4 scale-110 m-5 ";
 
   return (
     <>
       <br></br>
-      <p className="label_style_specialized scale-110  hover:scale-125 ">
+      <p className="scale-110 label_style_specialized hover:scale-125 ">
         Coursework
       </p>
       <div
@@ -25,7 +26,7 @@ function Timeline() {
           <br></br>
           <li className={hover_hightlight_color}>
             <a
-              className={text_style}
+              className="text_style"
               href="https://www.cs.bu.edu/courses/cs111/"
             >
               CS111: Introduction to Computer Science I 💾
@@ -38,7 +39,7 @@ function Timeline() {
           <br></br>
           <li className={hover_hightlight_color}>
             <a
-              className={text_style}
+              className="text_style"
               href="https://www.cs.bu.edu/courses/cs112/"
             >
               CS112: Introduction to Computer Science II 💾
@@ -50,7 +51,7 @@ function Timeline() {
           <li className={hover_hightlight_color}>
             {" "}
             <a
-              className={text_style}
+              className="text_style"
               href="https://www.bu.edu/academics/cas/courses/cas-cs-131/"
             >
               {" "}
@@ -67,7 +68,7 @@ function Timeline() {
           <br></br>
           <li className={hover_hightlight_color}>
             <a
-              className={text_style}
+              className="text_style"
               href="https://www.bu.edu/academics/cas/courses/cas-cs-132/"
             >
               CS132: Geometric Algorithms 💾
@@ -76,7 +77,7 @@ function Timeline() {
           <br></br>
           <li className={hover_hightlight_color}>
             <a
-              className={text_style}
+              className="text_style"
               href="https://www.howchenn.com/teaching/fall2022"
             >
               CS 200: Applied Problem Solving 💾
@@ -85,7 +86,7 @@ function Timeline() {
           <br></br>
           <li className={hover_hightlight_color}>
             <a
-              className={text_style}
+              className="text_style"
               href="https://www.bu.edu/academics/cas/courses/cas-cs-210/"
             >
               CS210: Computer Systems 💾
@@ -94,7 +95,7 @@ function Timeline() {
           <br></br>
           <li className={hover_hightlight_color}>
             <a
-              className={text_style}
+              className="text_style"
               href="https://www.bu.edu/academics/cas/courses/cas-cs-131/"
             >
               DS280: Spark! UX/UI Design 📱

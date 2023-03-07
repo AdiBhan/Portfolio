@@ -24,7 +24,7 @@ const Design = () => {
         options={{
           background: {
             color: {
-              value: "222428",
+              value: "121313",
             },
           },
           fpsLimit: 120,
@@ -68,10 +68,10 @@ const Design = () => {
               directions: "none",
               enable: true,
               outModes: {
-                default: "bounce",
+                default: "out",
               },
               random: false,
-              speed: 4,
+              speed: 3,
               straight: false,
             },
             number: {

@@ -11,6 +11,9 @@ function Buffer(props) {
       <br></br>
       <br></br>
       <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
       <br></br> <br></br>
       <br></br>
       <br></br>
@@ -19,6 +22,7 @@ function Buffer(props) {
       <br></br> <br></br>
       <br></br>
       <br></br> <br></br>
+      <br></br>
       <br></br>
       <br></br>
       <br></br>

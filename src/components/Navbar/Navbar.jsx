@@ -1,9 +1,10 @@
 //-------------------------------------------------------------------------------------------------
 // IMPORTS
 import { motion } from "framer-motion";
-import React from "react";
+import React, { useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import "semantic-ui-css/semantic.min.css";
+import "../../styles/index.css";
 import "../../styles/navbar.css";
 //-------------------------------------------------------------------------------------------------
 // CSS INLINE STYLING USING TAILWIND
@@ -18,10 +19,12 @@ const navigation_bar_style =
 //-------------------------------------------------------------------------------------------------
 
 function Navbar(props) {
+  const [progress, setProgress] = useState(0);
+  const bar = useRef(null);
+
   return (
     <>
-      <div className="sticky top-0 z-50 bg-transparent navbar_style">
-        {" "}
+      <div className="sticky top-0 z-50 scale-90 bg-transparent navbar_style">
         <div className={background}>
           <nav className={navigation_bar_style}>
             <Link className={header_style} to="/">
@@ -35,7 +38,6 @@ function Navbar(props) {
                 <button className={hover_style}>Journey </button>
               </motion.div>
             </Link>
-
             <Link className={header_style} to="/Project/">
               <motion.div
                 whileHover={{
@@ -50,7 +52,6 @@ function Navbar(props) {
                 </button>
               </motion.div>
             </Link>
-
             <Link className={header_style} to="/Contact/">
               <motion.div
                 whileHover={{
@@ -63,9 +64,9 @@ function Navbar(props) {
                   Contact{" "}
                 </button>
               </motion.div>
-            </Link>
-          </nav>
-        </div>
+            </Link>{" "}
+          </nav>{" "}
+        </div>{" "}
       </div>
     </>
   );

@@ -114,3 +114,26 @@
   transform: translateY(-10px);
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
+.more {
+  padding: 5px;
+
+  font-size: 1rem;
+  position: relative;
+  margin-left: 50px;
+  bottom: 17px;
+  font-weight: 600;
+  color: #000;
+  text-align: center;
+  cursor: pointer;
+}
+.more:hover {
+  color: blue;
+}
+.coming_soon {
+  position: absolute;
+
+  left: 20%;
+  width: 60%;
+  height: 60%;
+  top: 10%;
+}
