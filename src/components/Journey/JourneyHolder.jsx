@@ -7,7 +7,7 @@ import "semantic-ui-css/semantic.min.css";
 import Typewriter from "typewriter-effect";
 import "../../styles/index.css";
 import "../../styles/skills.css";
-import Profile from "./Profile";
+import Profile from "./Profile/Profile";
 import SkillsHolder from "./Skills/SkillsHolder";
 //-------------------------------------------------------------------------------------------------
 // CSS INLINE STYLING USING TAILWIND
@@ -33,25 +33,34 @@ function Journey(props) {
                 </div>
                 <div className="pos_links">
                   <Link to="/Project/">
-                    <a className="intro_style">View my Projects</a>
+                    <a className="intro_style">View my Projects 🗂️</a>
                   </Link>
                   <Link to="/Skills/">
                     <a href="/" className="intro_style">
-                      View my Skills
+                      View my Skills 💻
                     </a>
                   </Link>
                   <Link to="/Contact/">
-                    <a className="intro_style">Send a Message</a>{" "}
+                    <a className="intro_style">Send a Message ✉️</a>{" "}
                   </Link>
                 </div>{" "}
               </div>
-              <div class="ui segment">
+              <div class="ui segment mobile_version">
                 <Typewriter
+                  options={{
+                    delay: 30, // time delay between each character
+                    cursor: "_",
+                    autoStart: false,
+                    loop: false, // loop on or off (true or false)
+
+                    pauseFor: 30, // time to pause before starting the next string
+                    typingSpeed: 10, // speed of typing in milliseconds per character
+                  }}
                   className="indent-8 typewriter_size "
                   onInit={(typewriter) => {
                     typewriter
                       .typeString(
-                        "Adi : Hi there! Welcome to my website. I am a sophomore at Boston University, majoring in Computer Science. Currently, I am actively pursuing an 2023 Summer Software Development Internship. As a problem solver I love to tackle any challenge which comes my way. My expertise is in Java,Python,ReactJS/NextJS and am, along with my coursework. I like to showcase my abilities on projects at local hackathons. Check out my journey, projects, and feel free to contact me below!"
+                        "<strong>Adi:</strong>  Hi there! Welcome to my website. I am a sophomore at Boston University, majoring in Computer Science. Currently, I am actively pursuing an 2023 Summer Software Development Internship. As a problem solver I love to tackle any challenge that comes my way. My expertise is in  Web Development (ReactJS/NextJS) and am currently working as a Web Developer for Boston University's College of Engineering, along with completing my coursework. I like to showcase my abilities at local hackathons and on personal projects. Check out my journey, projects, and feel free to contact me!"
                       )
 
                       .start();

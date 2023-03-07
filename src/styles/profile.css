@@ -6,12 +6,8 @@
   cursor: pointer;
 }
 
-.rotation {
-  transform: rotate(-2deg);
-  margin-right: 5px;
-}
 .image_style:hover {
-  animation: threedanimation 2s ease-in-out forwards;
+  animation: threedanimation 5s ease-in-out forwards;
 }
 
 @keyframes threedanimation {
@@ -19,9 +15,52 @@
     transform: rotateY(0deg);
   }
   50% {
-    transform: rotateY(360deg);
+    transform: rotateY(180deg);
   }
   100% {
     transform: rotateY(0deg);
   }
+}
+
+.rotation {
+  transform: rotate(-2deg);
+  margin-right: 5px;
+}
+@media screen and (max-width: 768px) {
+  .image_style {
+    width: 100%;
+    position: relative;
+    margin-left: 50px;
+  }
+  .icons_style {
+    position: relative;
+    margin-right: 90px;
+  }
+  .mobile_ver {
+    position: relative;
+    margin-right: 40px;
+    rotate: -358deg;
+  }
+}
+.icons_style {
+  display: block;
+}
+.mobile_ver {
+  display: block;
+}
+.shadow_text {
+  font-family: "Roboto", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #000;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 1rem;
+  position: relative;
+  z-index: 1;
+  animation: fade-in 0.5s;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  position: relative;
+  top: 5px;
 }

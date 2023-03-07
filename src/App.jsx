@@ -3,7 +3,7 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import { motion } from "framer-motion";
 import React from "react";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { HashRouter, Route, Switch } from "react-router-dom";
 import "semantic-ui-css/semantic.min.css";
 import "./App.css";
 import Buffer from "./components/404/ErrorPage";
@@ -24,7 +24,7 @@ const background_buffer =
 //--------------------------------------------------------------------------------------------------
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Design />
 
       <div className={background_buffer}>
@@ -65,7 +65,7 @@ function App() {
         </Switch>
         <Footers />
       </div>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 export default App;

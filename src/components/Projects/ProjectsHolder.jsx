@@ -68,7 +68,7 @@ function Projects(props) {
                 />
                 <Carousel.Caption className={`${carouselPos} `}>
                   <h3 className={`${project_header_style_1} header_style`}>
-                    Adi 🤖 | AI Ad Generator App
+                    Adi 🤖 | AI Ad Generator Mobile App
                   </h3>
                   <p className={`body_sty ${body_text_style}`}>
                     <b>Introduction:</b>
@@ -94,6 +94,7 @@ function Projects(props) {
                     >
                       [Source Code]
                     </a>
+                    <i class="file code icon"></i>
                   </p>
                 </Carousel.Caption>
               </Carousel.Item>
@@ -135,7 +136,8 @@ function Projects(props) {
                       href="https://github.com/AdiBhan/Greengle"
                     >
                       [Source Code]
-                    </a>
+                    </a>{" "}
+                    <i class="file code icon"></i>
                   </p>
                 </Carousel.Caption>
               </Carousel.Item>
@@ -143,7 +145,7 @@ function Projects(props) {
               <Carousel.Item>
                 <img
                   className={` project_styling ${img_pos}`}
-                  src="https://i.gyazo.com/0119564a4dbd3c5af08d2ebe65aaf5d7.png"
+                  src="https://i.gyazo.com/f78f4bbb2c17643c4745dca50aae053c.png"
                   alt="Third slide"
                 />
 
