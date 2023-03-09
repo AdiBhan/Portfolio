@@ -14,9 +14,9 @@ function Timeline() {
   const header_spacing = "basis-1/4 mt-4 scale-110 m-5 ";
 
   return (
-    <>
+    <div className="mobile-timeline ">
       <br></br>
-      <p className="scale-110 label_style_specialized hover:scale-125 ">
+      <p className="scale-100 label_style_specialized hover:scale-110 cursor-default ">
         Coursework
       </p>
       <div
@@ -31,7 +31,7 @@ function Timeline() {
               className="text_style"
               href="https://www.cs.bu.edu/courses/cs111/"
             >
-              CS111: Introduction to Computer Science I 💾
+              CS111: Intro to Computer Science I 💾
             </a>
           </li>
         </div>
@@ -44,7 +44,7 @@ function Timeline() {
               className="text_style"
               href="https://www.cs.bu.edu/courses/cs112/"
             >
-              CS112: Introduction to Computer Science II 💾
+              CS112: Intro to Computer Science II 💾
             </a>
           </li>
 
@@ -106,7 +106,7 @@ function Timeline() {
           </li>{" "}
         </div>{" "}
       </div>{" "}
-    </>
+    </div>
   );
 }
 

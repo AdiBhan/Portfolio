@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap");
 .project_styling {
   box-shadow: 5px 5px 2px #000000;
   border-radius: 10px;
@@ -35,6 +36,15 @@
   box-shadow: 5px 5px 2px #000000;
   border-radius: 10px;
 }
+
+@media screen and (max-width: 768px) {
+  .header_style {
+    font-size: 1.2rem;
+  }
+  .body_text_style {
+    font-size: 1rem;
+  }
+}
 @keyframes animate {
   0% {
     transform: scale(1);
@@ -51,5 +61,86 @@
   justify-content: center;
 }
 .sourcecodebutton:hover {
-  animation: animate 3s ease-in;
+  transform: scale(1.05) rotate(360deg);
+}
+.new {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+
+  font-size: 0.5rem;
+  font-family: "Montserrat", sans-serif;
+  text-shadow: 0.5px 0.3px 0.5px #837a7a;
+  font-style: oblique;
+  box-shadow: 0.5px 0.5px 1px #000000;
+  border-radius: 20%;
+  transform: scale(1.1);
+  font-weight: bold;
+  transition: all 0.5s ease-in-out;
+  color: rgb(0, 0, 0);
+  background-color: #ffffff;
+  width: 40px;
+  height: 20px;
+  padding: 5px;
+  border: 3px;
+  position: absolute;
+  top: 9.3%;
+  right: 43.8%;
+}
+.demo-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+
+  font-size: 0.5rem;
+  font-family: "Montserrat", sans-serif;
+  text-shadow: 0.5px 0.3px 0.5px #837a7a;
+  font-style: oblique;
+  box-shadow: 0.5px 0.5px 1px #000000;
+  border-radius: 10%;
+  transform: scale(1.1);
+  font-weight: bold;
+  transition: all 0.5s ease-in-out;
+  color: rgb(0, 0, 0);
+  background-color: #ffffff;
+  width: 80px;
+  height: 20px;
+  padding: 5px;
+  border: 3px;
+}
+
+.source-code-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+
+  font-size: 0.5rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  text-shadow: 0.5px 0.3px 0.5px #837a7a;
+  font-style: oblique;
+  box-shadow: 0.5px 0.5px 1px #000000;
+  border-radius: 10%;
+  transform: scale(1.1);
+  font-weight: bold;
+  transition: all 0.5s ease-in-out;
+  color: rgb(0, 0, 0);
+  background-color: #ffffff;
+  width: 80px;
+  height: 20px;
+  padding: 5px;
+  border: 3px;
+}
+.horz-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
 }

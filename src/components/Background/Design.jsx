@@ -64,7 +64,7 @@ const Design = () => {
               directions: "none",
               enable: true,
               outModes: {
-                default: "out",
+                default: "bounce",
               },
               random: false,
               speed: 2.5,

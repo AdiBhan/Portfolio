@@ -5,6 +5,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "semantic-ui-css/semantic.min.css";
 import Typewriter from "typewriter-effect";
+import Timeline from "../../components/Journey/Timeline";
 import "../../styles/index.css";
 import "../../styles/skills.css";
 import Profile from "./Profile/Profile";
@@ -39,6 +40,9 @@ function Journey(props) {
                     <a href="/" className="intro_style">
                       View my Skills 💻
                     </a>
+                  </Link>{" "}
+                  <Link to="/Schedule/">
+                    <a className="intro_style">View my Schedule 📅</a>
                   </Link>
                   <Link to="/Contact/">
                     <a className="intro_style">Send a Message ✉️</a>{" "}
@@ -68,10 +72,10 @@ function Journey(props) {
                 />{" "}
               </div>
             </div>{" "}
-            {/* <div class={props.divider}></div>
-            <Timeline />
-            <div class={props.divider}></div> */}
+            <div class={props.divider}></div>
             <SkillsHolder />
+            <div class={props.divider}></div>
+            <Timeline />
             <div class={props.divider}></div>
           </p>
         </div>

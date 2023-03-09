@@ -136,7 +136,9 @@ code {
     display: none;
   }
   .timeline_mobile_screens {
-    scale: 90%;
+    scale: 71%;
+
+    width: 200px;
     position: relative;
     bottom: 70px;
   }

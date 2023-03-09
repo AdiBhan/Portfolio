@@ -6,13 +6,7 @@ import "../../../styles/skills.css";
 function Skills(props) {
   const [open, setOpen] = React.useState(false);
   const [progress, setProgress] = useState(0);
-
-  const handleProgressClick = () => {
-    if (progress < 100) {
-      setProgress(progress + 10);
-    }
-  };
-
+  console.log(props.skill_level);
   const icons = [
     "python icon",
     "react icon",
@@ -32,14 +26,12 @@ function Skills(props) {
       </div>{" "}
       <div
         className={`ui ${props.color} active progress progressbar_style m-4`}
-        value={progress}
         total={100}
-        onClick={handleProgressClick}
+        style={{ width: `100%` }}
+        value={progress}
       >
-        <div className="bar">
-          <div className="progress"></div>
-        </div>{" "}
-      </div>{" "}
+        <div style={{ width: props.skill_level }} className="bar"></div>{" "}
+      </div>
       <p onClick={() => setOpen(true)} className="more">
         Learn More
       </p>

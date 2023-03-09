@@ -25,11 +25,13 @@ function Profile(props) {
             <p className={`${text_style} shadow_text`}> Adi Bhan</p>
 
             <div className={`${icons_pos} mobile_ver`}>
-              <img
-                alt="Adi Bhan "
-                className={`${adi_profile_img_style} image_style`}
-                src="https://media.licdn.com/dms/image/D4E03AQHWdA1NqnJyag/profile-displayphoto-shrink_800_800/0/1674081456159?e=1679529600&v=beta&t=OXLnXV7AgEJPN7mIi5WdblMk7oH2qADQLEHzhjrD9SM"
-              ></img>{" "}
+              <div className="animateimg">
+                <img
+                  alt="Adi Bhan "
+                  className={`${adi_profile_img_style} image_style`}
+                  src="https://media.licdn.com/dms/image/D4E03AQHWdA1NqnJyag/profile-displayphoto-shrink_800_800/0/1674081456159?e=1679529600&v=beta&t=OXLnXV7AgEJPN7mIi5WdblMk7oH2qADQLEHzhjrD9SM"
+                ></img>{" "}
+              </div>
               <Icons />
             </div>
           </div>{" "}

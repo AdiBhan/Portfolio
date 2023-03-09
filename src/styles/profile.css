@@ -2,23 +2,20 @@
   border-radius: 15%;
   border: 2px solid #1a1919b3;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  transition: all 0.3s ease-in-out;
+  filter: saturate(80%);
+
   cursor: pointer;
 }
 
 .image_style:hover {
-  animation: threedanimation 5s ease-in-out forwards;
 }
 
 @keyframes threedanimation {
   0% {
     transform: rotateY(0deg);
   }
-  50% {
-    transform: rotateY(180deg);
-  }
   100% {
-    transform: rotateY(0deg);
+    transform: rotateY(360deg);
   }
 }
 
@@ -47,6 +44,12 @@
 }
 .mobile_ver {
   display: block;
+}
+.animateimg {
+  display: block;
+}
+.animateimg:hover {
+  animation: threedanimation 3s ease-in-out;
 }
 .shadow_text {
   font-family: "Roboto", sans-serif;

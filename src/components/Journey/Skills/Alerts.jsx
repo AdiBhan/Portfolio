@@ -1,24 +1,41 @@
 import React from "react";
 import { Button, Header, Icon, Modal } from "semantic-ui-react";
+import "../../../styles/alerts.css";
 function Alerts(props) {
+  const closebutton = () => {
+    const alert = document.getElementById("alert");
+    alert.classList.add("closed");
+    setTimeout(() => props.setOpen(null), 500);
+  };
+
   return (
-    <div>
+    <div className="alert-animation">
       {" "}
       <Modal
-        className="coming_soon"
+        className={`coming_soon alert-animation ${props.open ? "" : "closed"}`}
         closeIcon
+        id="alert"
         open={props.open}
-        onClose={() => props.setOpen(false)}
+        onClose={() => {
+          props.setOpen(false);
+        }}
         onOpen={() => props.setOpen(true)}
       >
-        <Header icon="archive" content="Coming Soon" />
+        <Header className="center-text" icon="archive" content="Coming Soon" />
         <Modal.Content>
-          <p>This feature is coming soon. Please check back later for more</p>
+          <p className="center-text">
+            {" "}
+            This section is currently a working in progress. I plan on adding
+            projects,<br></br> and information to this section in the near
+            future.{" "}
+          </p>
         </Modal.Content>
         <Modal.Actions>
-          <Button color="red" onClick={() => props.setOpen(false)}>
-            <Icon name="remove" /> Close
-          </Button>
+          <div className="close-pos">
+            <Button color="red" onClick={closebutton}>
+              <Icon name="remove " /> Close
+            </Button>
+          </div>
         </Modal.Actions>
       </Modal>
     </div>

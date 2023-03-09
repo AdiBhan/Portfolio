@@ -1,11 +1,13 @@
 //-------------------------------------------------------------------------------------------------
 
-import { motion } from "framer-motion";
 import React from "react";
 import Carousel from "react-bootstrap/Carousel";
 import "semantic-ui-css/semantic.min.css";
 import "../../styles/index.css";
+import Demo from "./Demo";
+import New from "./New";
 import "./Projects.css";
+import SourceCode from "./SourceCode";
 //-------------------------------------------------------------------------------------------------
 // CSS INLINE STYLING USING TAILWIND
 const img_size = "h-50 w-50";
@@ -41,12 +43,7 @@ const carouselResize = "scale-95";
 function Projects(props) {
   return (
     <>
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 0.5 }}
-        whileClick={{ scale: 0.9 }}
-      >
+ 
         <div id="Projects ">
           {" "}
           <br></br> <br></br>
@@ -72,11 +69,12 @@ function Projects(props) {
                   </h3>
                   <p className={`body_sty ${body_text_style}`}>
                     <b>Introduction:</b>
-                    <br></br> Have you ever run ads before? Probably not. It
-                    costs $200 on average to create a professional marketing
-                    poster. That's where Adi comes in. With just 20 cents a
-                    piece, we instantly generate a poster for you. So anyone can
-                    promote their own ventures! <br></br>
+                    <br></br> Created for 2022 BostonHacks Competition. Have you
+                    ever run ads before? Probably not. It costs $200 on average
+                    to create a professional marketing poster. That's where Adi
+                    comes in. With just 20 cents a piece, we instantly generate
+                    a poster for you. So anyone can promote their own ventures!{" "}
+                    <br></br>
                     <br></br>
                     <div className="mb-3">
                       <b>Winner: </b>BostonHacks 2022 Hackathon, Boston MA
@@ -92,9 +90,8 @@ function Projects(props) {
                       className={`${textStyle} sourcecodebutton`}
                       href="https://github.com/AdiBhan/bostonhacks-2022"
                     >
-                      [Source Code]
+                      <SourceCode />
                     </a>
-                    <i class="file code icon"></i>
                   </p>
                 </Carousel.Caption>
               </Carousel.Item>
@@ -135,9 +132,8 @@ function Projects(props) {
                       className={`${textStyle} sourcecodebutton`}
                       href="https://github.com/AdiBhan/Greengle"
                     >
-                      [Source Code]
+                      <SourceCode />
                     </a>{" "}
-                    <i class="file code icon"></i>
                   </p>
                 </Carousel.Caption>
               </Carousel.Item>
@@ -168,13 +164,13 @@ function Projects(props) {
                           className={`${textStyle} sourcecodebutton`}
                           href="https://adibhan.github.io/Portfolio/"
                         >
-                          [Demo]
+                          <Demo />
                         </a>{" "}
                         <a
                           className={`${textStyle} sourcecodebutton`}
                           href="https://github.com/AdiBhan/Portfolio"
                         >
-                          [Source Code]
+                          <SourceCode />
                         </a>
                       </div>
                     </p>
@@ -195,6 +191,7 @@ function Projects(props) {
                     <h3 className={`${project_header_style_3} header_style`}>
                       USColleges
                     </h3>
+                    <New />
                     <p className={`body_sty ${body_text_style_4}`}>
                       <b>Introduction:</b>
                       <br></br>Introducing "USColleges" a one-stop website for
@@ -216,13 +213,13 @@ function Projects(props) {
                           className={`${textStyle} sourcecodebutton`}
                           href="http://uscolleges.live/"
                         >
-                          [Demo]
+                          <Demo />
                         </a>{" "}
                         <a
                           className={`${textStyle} sourcecodebutton`}
                           href="https://github.com/AdiBhan/USColleges"
                         >
-                          [Source Code]
+                          <SourceCode />
                         </a>
                       </div>
                     </p>
@@ -241,8 +238,9 @@ function Projects(props) {
                 <Carousel.Caption className={carouselPos}>
                   <div className="pb-4">
                     <h3 className={`${project_header_style_5} header_style`}>
-                      ParentAlly **NEW**
-                    </h3>
+                      ParentAlly
+                    </h3>{" "}
+                    <New />
                     <p className={`body_sty ${body_text_style_5}`}>
                       <b>Introduction:</b>
                       <br></br>Created for the 2023 Civic Tech Hackathon. Our
@@ -266,13 +264,13 @@ function Projects(props) {
                           className={`${textStyle} sourcecodebutton`}
                           href="https://parentally.social/"
                         >
-                          [Demo]
+                          <Demo />
                         </a>{" "}
                         <a
                           className={`${textStyle} sourcecodebutton`}
                           href="https://devpost.com/software/parentally-empowering-single-parents?ref_content=my-projects-tab&ref_feature=my_projects"
                         >
-                          [Source Code]
+                          <SourceCode />
                         </a>
                       </div>
                     </p>
@@ -280,9 +278,9 @@ function Projects(props) {
                 </Carousel.Caption>
               </Carousel.Item>
             </Carousel>
-          </div>
+          </div>{" "}
         </div>
-      </motion.div>
+   
     </>
   );
 }
